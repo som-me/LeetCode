@@ -9,4 +9,6 @@ class Solution:
                 count[num] += 1
             else:
                 count[num] = 1
-        return max(count, key = count.get)
+        for k, v in count.items():
+            if v > floor:
+                return k
