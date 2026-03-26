@@ -1,7 +1,6 @@
 class Solution(object):
     def findRepeatedDnaSequences(self, s):
         k = 10
-        left = 0
         seen = set()
         result = set()
         for r in range(len(s) - k + 1):
